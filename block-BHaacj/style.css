@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* costom-styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* container */
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+     width: 100%;
+}
+
+.mini-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* color */
+
+.bg-color-light{
+    background-color: rgb(245,246,246);
+}
+
+.main-bg-color-{
+    background-color: rgb(230,230,230) ;
+}
+
+.bg-color-light-greay{
+   background-color: rgb(239,239,239);
+}
+
+.bg-color-green{
+    background-color: rgb(105,198,186);
+}
+
+.bg-color-purple{
+    background-color: rgb(198,105,149);
+}
+
+.white-bg-color{
+    background-color: rgb(255,255,255);
+}
+
+.text-color-white{
+    color: rgb(252,249,250);
+}
+
+.text-color-light{
+    color: rgb(33,37,41);
+   
+}
+
+.text-color-9B9C9D{
+    color: rgb(96, 98, 99);
+}
+
+.btn-text{
+    color:  rgb(105,198,186);
+}
+
+.heading-color{
+    color: rgb(16,16,16);
+}
+
+.btn-color-purple{
+    color: rgb(199, 91, 140);
+}
+
+.coler-purple{
+    color: rgb(237, 85, 154) ;
+}
+
+
+/* flex */
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-30{
+    flex: 0 1 30%;
+}
+
+.flex-50{
+    flex: 0 1 50%;
+}
+
+.flex-46{
+    flex: 0 1 46%;
+}
+
+.item-start{
+    align-items: flex-start;
+}
+
+a{
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    padding: 16px 24px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+.margin-top{
+    margin-top: 48px;
+}
+
+
+/* styling */
+
+
+/* header */
+
+.logo{
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+.brand{
+    font-size: 30px;
+    display: inline-block;
+    margin:  30px 0;
+    font-weight: 700;
+}
+
+.navbar a{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.navbar  .Home{
+    color: rgb(108,199,187);
+}
+
+/* hero-section */
+
+.bg-img{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)),  url(./assets/banner.jpg) no-repeat  ;
+    background-size: cover;
+    padding: 120px 0;
+
+}
+
+.hero-text{
+    font-size: 18px;
+}
+
+.icon-box{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:  rgb(108,199,187);
+    margin: 0 auto;
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.icon-box i{
+    color: white;
+    font-size: 18px;
+}
+
+.heading{
+  font-size: 44px;
+}
+
+/* form */
+
+form{
+    background-color: #ffffff;
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 32px;
+    margin-top: 80px;
+}
+
+label{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(68, 65, 65);
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.form-control{
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 12px 16px;
+    border:  1px solid transparent ;
+   color: rgb(105, 101, 101);
+}
+
+.form-control:focus{
+    border-color:   rgb(108,199,187) ;
+}
+
+form .btn{
+    width: 100%;
+    box-shadow: none;
+}
+
+/* journey-section */
+
+.journey-col{
+    padding: 40px 0;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.priority-heading{
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+.priority-heading strong{
+    font-weight: 700;
+}
+
+.btn-primary{
+  margin-top: 20px;
+}
+
+/* article-section */
+
+.article-img{
+    font-size: 0;
+}
+
+
+.article{
+    position: relative; 
+}
+
+.article-content{
+    position: absolute;
+    left: 47%;
+}
+
+.article-col{
+    padding: 50px;
+    margin-right: 50px;
+
+}
+
+.article-heading{
+    font-size: 32px;
+}
+
+.article-text{
+    margin: 6px 0 20px 0;
+}
+
+/* article-2 */
+
+.article-col-2{
+    padding: 50px;
+    margin-left: 50px;
+}
+.article-content-2{
+    margin-right: -47px;
+    position: relative; 
+}
+
+/* map-article */
+
+.map-png{
+    padding: 40px 20px 40px 20px;
+    text-align: center;
+}
+
+.map-png p{
+    font-size: 18px;
+}
+
+.asia-png{
+    padding: 40px 60px;
+}
+
+/* pleace-section */
+
+.pleace-section{
+    padding: 80px 0;
+}
+
+.pleace-article{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.hotel-col{
+    width: 400px;
+}
+
+.hotel-col h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hotel-col p{
+    margin: 2px 0  10px;
+}
+
+
+.pleace-content{
+    margin: 40px 0;
+    box-shadow: 0 0 10px 1px rgba(187, 184, 184, 0.346);
+}
+
+.pleace-img {
+    font-size: 0;
+}
+
+
+
+.btn-text-1{
+    font-size: 40px;
+}
+
+.btn-text-2{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.btn-cover{
+    font-size: 0;
+}
+
+/* map-section */
+
+.contact{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.contact form{
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    right: 80px;
+    width: 30%;
+}
+
+.contact .form-control{
+    margin-bottom: 16px;
+    background-color:  rgba(151, 148, 148, 0.13);
+
+}
+
+/* footer */
+
+footer{
+    padding: 30px 0;
+    
+}

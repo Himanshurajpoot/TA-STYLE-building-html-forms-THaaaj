@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="mini-container flex">
+            <div>
+                <img class="logo" src="assets/logo.png" alt="logo">
+                <span class="brand">JOURNEY</span>
+            </div>
+            <div>
+                <nav class="navbar">
+                    <a class="Home" href="#">Home</a>
+                    <a href="#">Top Destinations</a>
+                    <a href="#">Recommended Places</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main-bg-color-">
+        <!-- hero-section -->
+        <section class="container bg-img">
+            <!-- <div class="hero"> -->
+            <div class="text-center hero-content">
+                <h1 class="heading text-color-white">LET'S BEGIN</h1>
+                <img class="dot-img " src="assets/dots-3.png" alt="dots">
+                <p class="hero-text text-color-white">We assist you to choose the best.</p>
+                <div class="icon-box">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <form class="  flex item-start" action="">
+                <fieldset class="flex-46">
+                    <label for="destination">Chose your destination</label>
+                    <input class="form-control" type="text" id="destination" name="destination"
+                        placeholder="Type your destination">
+                    <div class="flex margin-top">
+                        <div>
+                            <label for="check-in">Check In Date</label>
+                            <input class="form-control" name="check-in" type="date" placeholder="Check In"
+                                id="check-in">
+                        </div>
+                        <div>
+                            <label for="check-out">Check Out Date</label>
+                            <input class="form-control" name="check-out" type="date" placeholder="Check Out "
+                                id="check-out">
+                        </div>
+
+                    </div>
+                </fieldset>
+                <fieldset class="flex-46">
+                    <div class="flex">
+                        <div>
+                            <label for="room">How Many Rooms?</label>
+                            <select class="form-control" name="room" id="room">
+                                <option value="">1 Room</option>
+                                <option value="">2 Room</option>
+                                <option value="">3 Room</option>
+                                <option value="">4 Room</option>
+                                <option value="">5 Room</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="adult">Adult</label>
+                            <select class="form-control" name="adult" id="adult">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="child">Children</label>
+                            <select class="form-control" name="child" id="child">
+                                <option value="">0</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="text-center">
+                        <input class="btn bg-color-green text-color-white margin-top" type="submit"
+                            value="CHACK  AVAILABILTY ">
+
+                    </div>
+                </fieldset>
+            </form>
+            <!-- </div> -->
+
+        </section>
+        <!-- journey-priority-section -->
+        <section class="container bg-color-light-greay">
+            <div class="text-center journey-col ">
+                <h2 class="priority-heading text-color-light">YOUR <strong>JOURNEY</strong> IS OUR PRIORITY</h2>
+                <p class="text-color-9B9C9D">Nullam Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Tempore, veritatis nulla similique totam omnis maxime id
+                    repellendus corporis ipsam enim quis ad quidem et tempora
+                    reprehenderit eligendi! Autem, quae.
+                </p>
+                <button class="btn btn-primary bg-color-green text-color-white">CONTINUE EXPLORE</button>
+            </div>
+        </section>
+        <!-- article-section -->
+        <section class="container white-bg-color">
+
+            <article class="flex article">
+                <figure class="article-img">
+                    <img src="assets/tm-img-01.jpg" alt="view">
+                </figure>
+                <div class="article-content">
+                    <div class="article-col bg-color-green">
+                        <h3 class="article-heading text-color-white">Europe's most visited places</h3>
+                        <p class="text-color-white article-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Unde delectus
+                            blanditiis velit tempora, reiciendis officia pariatur quisquam dolore
+                            consequuntur iusto veritatis molestias alias nostrum sed, molestiae
+                            cupiditate doloribus dignissimos .
+                        </p>
+                        <button class="btn btn-secondry white-bg-color btn-text">CONTINUE READING</button>
+                    </div>
+                </div>
+            </article>
+            <article class="flex article-2">
+                <div class="article-content-2">
+                    <div class="article-col-2 bg-color-purple ">
+                        <h3 class="article-heading text-color-white">Asia's most popular places</h3>
+                        <p class="text-color-white article-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Unde delectus
+                            blanditiis velit tempora, reiciendis officia pariatur quisquam dolore
+                            consequuntur iusto veritatis molestias alias nostrum sed, molestiae
+                            cupiditate doloribus dignissimos .
+                        </p>
+                        <button class="btn btn-secondry btn-color-purple white-bg-color btn-text">CONTINUE
+                            READING</button>
+                    </div>
+                </div>
+                <div class="article-img-2">
+                    <figure class="">
+                        <img src="assets/tm-img-02.jpg" alt="view">
+                    </figure>
+                </div>
+
+            </article>
+            <article class="flex article">
+                <figure class="article-img">
+                    <img src="assets/tm-img-03.jpg" alt="view">
+                </figure>
+                <div class="article-content">
+                    <div class="article-col bg-color-green">
+                        <h3 class="article-heading text-color-white">America's most famous places</h3>
+                        <p class="text-color-white article-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Unde delectus
+                            blanditiis velit tempora, reiciendis officia pariatur quisquam dolore
+                            consequuntur iusto veritatis molestias alias nostrum sed, molestiae
+                            cupiditate doloribus dignissimos .
+                        </p>
+                        <button class="btn btn-secondry white-bg-color btn-text">CONTINUE READING</button>
+                    </div>
+                </div>
+            </article>
+            <article class=" flex bg-color-green">
+                <figure class="map-png">
+                    <img src="assets/north-america.png" alt="NORTH AMERICA-map">
+                    <p class="text-color-white">NORTH AMERICA</p>
+                </figure>
+                <figure class="map-png">
+                    <img src="assets/south-america.png" alt="SOUTH AMERICA-map">
+                    <p class="text-color-white">SOUTH AMERICA</p>
+                </figure>
+                <figure class="map-png">
+                    <img src="assets/europe.png" alt="europe-map">
+                    <p class="text-color-white">EUROPE</p>
+                </figure>
+                <figure class="bg-color-purple  asia-png map-png">
+                    <img src="assets/asia.png" alt="ASIA-map">
+                    <p class="text-color-white">ASIA</p>
+                </figure>
+                <figure class="map-png">
+                    <img src="assets/africa.png" alt="AFRICA-map">
+                    <p class="text-color-white">AFRICA</p>
+                </figure>
+                <figure class="map-png">
+                    <img src="assets/australia.png" alt="AUSTRALIA-map">
+                    <p class="text-color-white">AUSTRALIA</p>
+                </figure>
+                <figure class="map-png">
+                    <img src="assets/antartica.png" alt="ANTARTICA-map">
+                    <p class="text-color-white">ANTARTICA</p>
+                </figure>
+            </article>
+        </section>
+        <!-- pleace-section -->
+        <section class="pleace-section white-bg-color container">
+            <article class="pleace-article">
+                <div class="flex white-bg-color pleace-content ">
+                    <figure class="pleace-img">
+                        <img src="assets/tm-img-06.jpg" alt="Singapore-img">
+                    </figure>
+                    <div class="hotel-col">
+                        <h4 class="text-color-light">ASIA RESORT HOTEL</h4>
+                        <p class="coler-purple">Singapore</p>
+                        <p class="text-color-9B9C9D">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vero quibusdam atque, natus corporis animi eligendi.
+                        </p>
+                    </div>
+                    <div class="bg-color-green flex">
+                        <figure class="btn-cover">
+                            <img src="assets/button-curve.png" alt="yangon,myanmar-imh">
+
+                        </figure>
+                        <div class="">
+                            <p class="text-color-white text-center btn-text-1">$440</p>
+                            <p class="text-color-white btn-text-2">CONTINUE READING</p>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+            <article class="pleace-article">
+                <div class="flex white-bg-color pleace-content ">
+                    <figure class="pleace-img">
+                        <img src="assets/tm-img-07.jpg" alt="bankok,thailend-img">
+                    </figure>
+                    <div class="hotel-col">
+                        <h4 class="text-color-light">NULLAM EGET EST A NISL</h4>
+                        <p class="coler-purple">Yangon, Myanmar</p>
+                        <p class="text-color-9B9C9D">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vero quibusdam atque, natus corporis animi eligendi.
+                        </p>
+                    </div>
+                    <div class="bg-color-green flex">
+                        <figure class="btn-cover">
+                            <img src="assets/button-curve.png" alt="vientiane,laos">
+
+                        </figure>
+                        <div class="">
+                            <p class="text-color-white text-center btn-text-1">$450</p>
+                            <p class="text-color-white btn-text-2">CONTINUE READING</p>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+            <article class="pleace-article">
+                <div class="flex white-bg-color pleace-content ">
+                    <figure class="pleace-img">
+                        <img src="assets/tm-img-05.jpg" alt="">
+                    </figure>
+                    <div class="hotel-col">
+                        <h4 class="text-color-light">PROIN INTERDUM ULLAMCORPER</h4>
+                        <p class="coler-purple">Bangkok, Thailand</p>
+                        <p class="text-color-9B9C9D">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vero quibusdam atque, natus corporis animi eligendi.
+                        </p>
+                    </div>
+                    <div class="bg-color-green flex">
+                        <figure class="btn-cover">
+                            <img src="assets/button-curve.png" alt="">
+
+                        </figure>
+                        <div class="">
+                            <p class="text-color-white text-center btn-text-1">$460</p>
+                            <p class="text-color-white btn-text-2">CONTINUE READING</p>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+            <article class="pleace-article">
+                <div class="flex white-bg-color pleace-content ">
+                    <figure class="pleace-img">
+                        <img src="assets/tm-img-04.jpg" alt="">
+                    </figure>
+                    <div class="hotel-col">
+                        <h4 class="text-color-light">LOREM IPSUM DOLOR SIT</h4>
+                        <p class="coler-purple">Vientiane, Laos</p>
+                        <p class="text-color-9B9C9D">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Vero quibusdam atque, natus corporis animi eligendi.
+                        </p>
+                    </div>
+                    <div class="bg-color-green flex">
+                        <figure class="btn-cover">
+                            <img src="assets/button-curve.png" alt="">
+
+                        </figure>
+                        <div class="">
+                            <p class="text-color-white text-center btn-text-1">$470</p>
+                            <p class="text-color-white btn-text-2">CONTINUE READING</p>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+            <div class="text-center">
+                <button class="btn bg-color-green text-color-white">SHOW MORE PLACACES</button>
+
+            </div>
+        </section>
+        <!-- map-section -->
+        <section class="container contact">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13503.084243362753!2d76.35214005!3d32.210399100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1662569252712!5m2!1sen!2sin"
+                width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="overlay"></div>
+            <form action="">
+                <fieldset>
+                    <div class="flex">
+                        <input class="form-control flex-46" name="name" type="text" placeholder="Name">
+                        <input class="form-control flex-46" type="email" name="email" placeholder="Email">
+                    </div>
+                    <input class="form-control" type="text" name="subject" placeholder="subject">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message"></textarea>
+                    <input type="submit" class="btn bg-color-green text-color-white  " value="SEND MESSAGE NOW">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="text-center bg-color-green">
+        <small class="text-color-white">Copyright &copy;2020 Your Company . Designed by Template Mo</small>
+    </footer>
+</body>
+
+</html>
